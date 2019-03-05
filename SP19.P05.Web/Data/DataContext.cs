@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SP19.P05.Web.Features.Authorization;
+using SP19.P05.Web.Features.Menus;
 
 namespace SP19.P05.Web.Data
 {
@@ -16,6 +17,7 @@ namespace SP19.P05.Web.Data
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<SP19.P05.Web.Features.Menus.Menu> Menu { get; set; }
+        public DbSet<SP19.P05.Web.Features.Menus.MenuDto> MenuDto { get; set; }
 
     }
 }
