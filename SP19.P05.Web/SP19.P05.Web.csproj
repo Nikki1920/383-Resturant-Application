@@ -30,6 +30,10 @@
     <ProjectReference Include="..\SP19.P05.Common\SP19.P05.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="SP19\P05\Web\Features\LineItems\" />
+  </ItemGroup>
+
   <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec WorkingDirectory="$(SpaRoot)" Command="yarn" />
