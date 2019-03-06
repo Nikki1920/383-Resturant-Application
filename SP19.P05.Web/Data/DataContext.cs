@@ -20,6 +20,8 @@ namespace SP19.P05.Web.Data
         public DbSet<SP19.P05.Web.Features.Menus.MenuDto> MenuDto { get; set; }
 
         public DbSet<SP19.P05.Web.Features.LineItems.MenuItem> MenuItem { get; set; }
+        public DbSet<SP19.P05.Web.Features.Tables.Table> Table { get; set; }
+
 
 
     }
